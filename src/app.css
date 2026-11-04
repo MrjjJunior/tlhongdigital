@@ -312,7 +312,7 @@ h1 em, h2 em {
 }
 
 .hero-image {
-  background-image: url("/images/hero.jpg");
+  background-image: url("/images/hero.webp");
   background-position: 50% 35%;
   background-size: cover;
   position: absolute;
