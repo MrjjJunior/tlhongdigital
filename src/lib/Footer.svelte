@@ -12,8 +12,8 @@
       </span>
     </a>
     <p>Photography, videography and visual storytelling from South Africa.</p>
-    <a class="footer-email" href="mailto:hello@tlhongdigital.co.za">
-      hello@tlhongdigital.co.za <Icon name="arrow" />
+    <a class="footer-email" href="mailto:tlhongdigital@gmail.com">
+      tlhongdigital@gmail.com <Icon name="arrow" />
     </a>
   </div>
   <div class="footer-bottom">
