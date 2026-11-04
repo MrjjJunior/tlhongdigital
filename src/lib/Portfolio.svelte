@@ -5,8 +5,8 @@
     'All',
     'Corporate & Events',
     'Portraits & Lifestyle',
-    'Weddings & Celebrations',
-    'Video & Content Production'
+    'Celebrations',
+    'Sports'
   ];
 
   const portfolioItems = [

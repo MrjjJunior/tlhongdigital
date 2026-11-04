@@ -27,7 +27,7 @@
 
   <figure class="about-figure">
     <img
-      src="/images/gosego.jpg"
+      src="/images/small.jpg"
       alt="Two people capturing a lively street scene"
       loading="lazy"
     />

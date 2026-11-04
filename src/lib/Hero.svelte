@@ -12,9 +12,10 @@
   <div class="hero-content">
     <p class="eyebrow light">Photography · Film · Storytelling</p>
     <h1>
-      We capture more<br />
-      than moments.<br />
-      <em>We capture stories.</em>
+      <!-- We capture more<br />
+      than moments.<br /> -->
+      <!-- <em>We capture stories.</em> -->
+       <em>Tlhong Digital</em>
     </h1>
     <p class="hero-copy">
       Professional photography, videography and visual content production for brands, businesses and individuals.

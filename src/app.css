@@ -771,13 +771,13 @@ h1 em, h2 em {
 }
 
 .contact-image {
-  background: url("https://images.unsplash.com/photo-1768508951262-42931f7ad924?auto=format&fit=crop&w=2000&q=85") 50% / cover;
+  background: url("/images/fam.jpg") 50% / cover;
   position: absolute;
   inset: 0;
 }
 
 .contact-overlay {
-  background: rgba(5, 27, 18, 0.78);
+  background: rgba(5, 27, 18, 0.5);
   position: absolute;
   inset: 0;
 }
