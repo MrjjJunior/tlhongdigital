@@ -20,7 +20,7 @@
     </p>
     <a
       class="button button-light"
-      href="mailto:hello@tlhongdigital.co.za?subject=Shoot%20enquiry"
+      href="mailto:tlhongdigital@gmail.com?subject=Shoot%20enquiry"
     >
       Let's tell your story <Icon name="arrow" />
     </a>

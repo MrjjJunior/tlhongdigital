@@ -12,7 +12,7 @@
       </span>
     </a>
     <p>Photography, videography and visual storytelling from South Africa.</p>
-    <a class="footer-email" href="mailto:tlhongdigital@gmail.com">
+    <a class="footer-email" href="mailto:tlhongdigital@gmail.com?subject=Shoot%20enquiry">
       tlhongdigital@gmail.com <Icon name="arrow" />
     </a>
   </div>
