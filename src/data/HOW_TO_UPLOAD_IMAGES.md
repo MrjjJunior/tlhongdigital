@@ -3,31 +3,38 @@
 ### Structure Overview:
 ```
 Category (e.g. Corporate & Events, Portraits & Lifestyle, Celebrations, Sports)
-  └── Events (e.g. Sasol Leadership Summit, WTC Summit, etc.)
+  └── Events (e.g. Sasol Bridge to Work, WeThinkCode_, 5FM, UJ Sigma Cup 10s)
         └── Photos (All pictures taken for that set event)
 ```
 
+Folder organization in `public/images/`:
+- `public/images/corporateAndEvents/` (e.g. `5fm/`, `GautengAICommunity/`, `SosalBrigdeToWork/`, `WeThinkCode/`)
+- `public/images/potraits/` (e.g. `GautengCityCollegePeagent/`, `PersonalPotraits/`)
+- `public/images/celebrations/`
+- `public/images/sports/` (e.g. `SigmaCup/`)
+
 ---
 
-### Step 1: Place your image files in `public/images`
-Save your photos in the `public/images/` folder (e.g. `public/images/my-photo.jpg`).
+### Step 1: Place your image files in `public/images/<category>/<event>/`
+Save your photos in the corresponding folder, for example:
+`public/images/corporateAndEvents/SosalBrigdeToWork/my-photo.jpg`
 
 ---
 
 ### Step 2: Add pictures to an event
 
 Open the category file where you want to add photos:
-- [corporateEvents.js](file:///c:/Users/kidba/Documents/work/tlhongdigital/src/data/categories/corporateEvents.js)
-- [portraitsLifestyle.js](file:///c:/Users/kidba/Documents/work/tlhongdigital/src/data/categories/portraitsLifestyle.js)
-- [celebrations.js](file:///c:/Users/kidba/Documents/work/tlhongdigital/src/data/categories/celebrations.js)
-- [sports.js](file:///c:/Users/kidba/Documents/work/tlhongdigital/src/data/categories/sports.js)
+- [corporateEvents.js](file:///c:/Users/tlhon/Documents/projects/tlhongdigital/src/data/categories/corporateEvents.js)
+- [portraitsLifestyle.js](file:///c:/Users/tlhon/Documents/projects/tlhongdigital/src/data/categories/portraitsLifestyle.js)
+- [celebrations.js](file:///c:/Users/tlhon/Documents/projects/tlhongdigital/src/data/categories/celebrations.js)
+- [sports.js](file:///c:/Users/tlhon/Documents/projects/tlhongdigital/src/data/categories/sports.js)
 
 #### To add pictures to an EXISTING event:
 Find the event in the `events` array, and add a new photo to its `photos` list:
 ```javascript
 {
-  id: 'sasol-6',
-  src: '/images/my-new-photo.jpg',
+  id: 'sasol-8',
+  src: '/images/corporateAndEvents/SosalBrigdeToWork/my-new-photo.jpg',
   alt: 'Photo description',
   title: 'Keynote Speaker',
   caption: 'Auditorium Stage'
@@ -44,12 +51,12 @@ Add a new event block inside the `events: [...]` array:
   tag: 'Conference',
   location: 'Sandton Convention Centre',
   date: 'November 2026',
-  coverImage: '/images/my-cover.jpg',
+  coverImage: '/images/corporateAndEvents/MyNewConference/cover.jpg',
   description: 'Three days of executive roundtables, keynote speeches, and brand showcases.',
   photos: [
     {
       id: 'photo-1',
-      src: '/images/my-cover.jpg',
+      src: '/images/corporateAndEvents/MyNewConference/cover.jpg',
       alt: 'Delegates in hall',
       title: 'Opening Plenary',
       caption: 'Main Hall',
@@ -57,7 +64,7 @@ Add a new event block inside the `events: [...]` array:
     },
     {
       id: 'photo-2',
-      src: '/images/photo2.jpg',
+      src: '/images/corporateAndEvents/MyNewConference/photo2.jpg',
       alt: 'Speaker on stage',
       title: 'Innovation Keynote',
       caption: 'Stage 1'

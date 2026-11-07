@@ -16,76 +16,57 @@ export const sportsGallery = {
   subtitle: 'Energy in motion, discipline in practice, and peak performance.',
   description:
     'Freezing split-second intensity, determination, and triumph across tournaments, school leagues, and professional athletic fixtures with razor-sharp precision.',
-  coverImage: '/images/sports/ujBoys.jpg',
+  coverImage: '/images/sports/SigmaCup/ujBoys.jpg',
   events: [
     {
-      id: 'sba-championship-game',
-      slug: 'sba-championship-game',
-      title: 'UJ sigma cup 10s',
-      tag: 'Rugby 10s tournament',
-      location: 'Indoor Arena',
+      id: 'uj-sigma-cup-10s',
+      slug: 'uj-sigma-cup-10s',
+      aliases: ['sba-championship-game'],
+      title: 'UJ Sigma Cup 10s',
+      tag: 'Rugby 10s Tournament',
+      location: 'UJ Arena / Grounds',
       date: 'October 2026',
-      coverImage: '/images/sports/ujBoys.jpg',
+      coverImage: '/images/sports/SigmaCup/ujBoys.jpg',
       description: 'Rugby 10s tournament fixture featuring fast breaks, intense defensive clashes, and high-flying athletic plays.',
       photos: [
         {
           id: 'sport-1',
-          src: '/images/sports/tunnel.jpg',
-          alt: 'Athletes in action during intense competition',
-          title: 'Walk in',
-          caption: 'The start of every game',
+          src: '/images/sports/SigmaCup/ujBoys.jpg',
+          alt: 'UJ Rugby 10s squad lineup photo',
+          title: 'UJ Squad Lineup',
+          caption: 'The UJ Sigma Cup 10s Team',
           featured: true
         },
         {
           id: 'sport-2',
-          src: '/images/PSX_20261004_063347.jpg',
-          alt: 'Court-side play and tactical adjustment',
-          title: 'Intense ruck',
-          caption: 'Players giving their all'
+          src: '/images/sports/SigmaCup/tunnel.jpg',
+          alt: 'Athletes in action during intense competition',
+          title: 'Walk In',
+          caption: 'The start of every game'
         },
         {
           id: 'sport-3',
-          src: '/images/PSX_20261004_064145.jpg',
+          src: '/images/sports/SigmaCup/PSX_20261004_063347.jpg',
+          alt: 'Court-side play and tactical adjustment',
+          title: 'Intense Ruck',
+          caption: 'Players giving their all'
+        },
+        {
+          id: 'sport-4',
+          src: '/images/sports/SigmaCup/PSX_20261004_064145.jpg',
           alt: 'Celebration and victory reaction from team bench',
           title: 'Victory Emotion',
           caption: 'Diving celebration'
         },
         {
-          id: 'sport-4',
-          src: '/images/sports/tumokick.jpg',
+          id: 'sport-5',
+          src: '/images/sports/SigmaCup/tumokick.jpg',
           alt: 'Dynamic sports athlete driving with intense focus',
           title: 'Pure Focus',
           caption: 'To lead the team to victory'
         }
       ]
-    }//,
-    // {
-    //   id: 'track-and-field-invitational',
-    //   slug: 'track-and-field-invitational',
-    //   title: 'Track & Field Invitational',
-    //   tag: 'Athletics',
-    //   location: 'Athletics Stadium',
-    //   date: 'May 2026',
-    //   coverImage: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1200&q=85',
-    //   description: 'Capturing explosive sprint starts, hurdle clearances, and the raw emotion of crossing the finish line.',
-    //   photos: [
-    //     {
-    //       id: 'track-1',
-    //       src: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1200&q=85',
-    //       alt: 'Runner pushing through the finish line at track event',
-    //       title: 'Split Seconds',
-    //       caption: 'Sprint Finals · Finish Line',
-    //       featured: true
-    //     },
-    //     {
-    //       id: 'track-2',
-    //       src: 'https://images.unsplash.com/photo-1554126196-3bdaba97491c?auto=format&fit=crop&w=1200&q=85',
-    //       alt: 'Stadium atmosphere under floodlights',
-    //       title: 'Stadium Energy',
-    //       caption: 'Night Session Invitational'
-    //     }
-    //   ]
-    // }
+    }
   ]
 };
 

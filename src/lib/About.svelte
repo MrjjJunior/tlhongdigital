@@ -27,7 +27,7 @@
 
   <figure class="about-figure">
     <img
-      src="/images/small.jpg"
+      src="/images/potraits/GautengCityCollegePeagent/small.jpg"
       alt="Two people capturing a lively street scene"
       loading="lazy"
     />

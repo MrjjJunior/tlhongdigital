@@ -5,7 +5,7 @@
  * 
  * Hierarchy:
  * 1. Category (e.g. Corporate & Events, Portraits & Lifestyle, etc.)
- * 2. Event (e.g. Sasol Leadership Summit, World Trade Center Summit)
+ * 2. Event (e.g. Sasol Bridge to Work, WeThinkCode_, etc.)
  * 3. Photos (The full set of pictures taken for that specific event)
  * ====================================================================
  */
@@ -77,7 +77,7 @@ export const categoryCards = [
     slug: 'all',
     title: 'All Work',
     tag: 'Full Portfolio',
-    coverImage: '/images/5fmlookback.jpg',
+    coverImage: '/images/corporateAndEvents/5fm/5fmlookback.jpg',
     description: 'Explore the complete archive across all events and photography disciplines.',
     eventCount: allGallery.events.length,
     photoCount: allGallery.events.reduce((sum, ev) => sum + (ev.photos?.length || 0), 0),
@@ -87,7 +87,7 @@ export const categoryCards = [
     slug: 'corporate-events',
     title: 'Corporate & Events',
     tag: 'Conferences & Summits',
-    coverImage: '/images/sasolgroup.jpg',
+    coverImage: '/images/corporateAndEvents/SosalBrigdeToWork/sasolgroup.jpg',
     description: 'Executive summits, business conferences, and evening galas.',
     eventCount: corporateEventsGallery.events.length,
     photoCount: corporateEventsGallery.events.reduce((sum, ev) => sum + (ev.photos?.length || 0), 0),
@@ -97,7 +97,7 @@ export const categoryCards = [
     slug: 'portraits-lifestyle',
     title: 'Portraits & Lifestyle',
     tag: 'Portraits & Branding',
-    coverImage: '/images/leraiSeated.jpg',
+    coverImage: '/images/potraits/GautengCityCollegePeagent/sba.jpg',
     description: 'Authentic character, personal branding, and editorial studio sessions.',
     eventCount: portraitsLifestyleGallery.events.length,
     photoCount: portraitsLifestyleGallery.events.reduce((sum, ev) => sum + (ev.photos?.length || 0), 0),
@@ -107,7 +107,7 @@ export const categoryCards = [
     slug: 'celebrations',
     title: 'Celebrations',
     tag: 'Weddings & Milestones',
-    coverImage: '/images/hero.webp',
+    coverImage: '/images/celebrations/Bonolo&SbuCelebration/IMG_9211.jpg',
     description: 'Weddings, nuptials, and joyful family milestone celebrations.',
     eventCount: celebrationsGallery.events.length,
     photoCount: celebrationsGallery.events.reduce((sum, ev) => sum + (ev.photos?.length || 0), 0),
@@ -117,7 +117,7 @@ export const categoryCards = [
     slug: 'sports',
     title: 'Sports',
     tag: 'Athletics & Action',
-    coverImage: '/images/sba.jpg',
+    coverImage: '/images/sports/SigmaCup/ujBoys.jpg',
     description: 'High-energy fixtures, tournament matches, and explosive motion.',
     eventCount: sportsGallery.events.length,
     photoCount: sportsGallery.events.reduce((sum, ev) => sum + (ev.photos?.length || 0), 0),
@@ -163,6 +163,8 @@ export function getGalleryBySlug(slug) {
 export function getEventBySlug(categorySlug, eventSlug) {
   const gallery = getGalleryBySlug(categorySlug);
   if (!gallery || !gallery.events) return null;
-  const event = gallery.events.find(ev => ev.slug === eventSlug || ev.id === eventSlug);
+  const event = gallery.events.find(
+    ev => ev.slug === eventSlug || ev.id === eventSlug || (ev.aliases && ev.aliases.includes(eventSlug))
+  );
   return event || null;
 }

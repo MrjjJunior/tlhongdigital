@@ -83,8 +83,8 @@
   });
 </script>
 
-<main>
-  <Header />
+<main class={currentView === 'gallery' ? 'view-gallery' : 'view-home'}>
+  <Header isGallery={currentView === 'gallery'} />
 
   {#if currentView === 'gallery'}
     {#if currentCategorySlug === 'corporate-events'}

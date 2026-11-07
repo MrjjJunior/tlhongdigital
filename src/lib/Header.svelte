@@ -1,6 +1,8 @@
 <script>
   import Icon from './Icon.svelte';
 
+  let { isGallery = false } = $props();
+
   let menuOpen = $state(false);
 
   function closeMenu() {
@@ -12,7 +14,7 @@
   }
 </script>
 
-<header class="site-header">
+<header class="site-header" class:gallery-header={isGallery}>
   <a class="brand" href="#home" aria-label="Tlhong Digital home" onclick={closeMenu}>
     <span class="brand-mark">T</span>
     <span class="brand-copy">

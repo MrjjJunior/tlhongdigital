@@ -207,6 +207,13 @@ h1 em, h2 em {
   position: absolute;
   top: 0;
   left: 0;
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-header.gallery-header {
+  background: var(--forest, #123126);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 24px rgba(7, 21, 15, 0.22);
 }
 
 .brand {
@@ -312,7 +319,7 @@ h1 em, h2 em {
 }
 
 .hero-image {
-  background-image: url("/images/hero.webp");
+  background-image: url("/images/corporateAndEvents/SosalBrigdeToWork/hero.webp");
   background-position: 50% 35%;
   background-size: cover;
   position: absolute;
@@ -771,7 +778,7 @@ h1 em, h2 em {
 }
 
 .contact-image {
-  background: url("/images/fam.jpg") 50% / cover;
+  background: url("/images/celebrations/TheFamily/fam.jpg") 50% / cover;
   position: absolute;
   inset: 0;
 }

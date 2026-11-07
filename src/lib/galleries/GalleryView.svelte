@@ -300,7 +300,7 @@
       <div class="cta-buttons">
         <a
           class="button button-light"
-          href="mailto:hello@tlhongdigital.co.za?subject={encodeURIComponent('Shoot enquiry: ' + (currentEvent ? currentEvent.title : gallery.title))}"
+          href="mailto:tlhongdigital@gmail.com?subject={encodeURIComponent('Shoot enquiry: ' + (currentEvent ? currentEvent.title : gallery.title))}"
         >
           Inquire about this style <Icon name="arrow" />
         </a>
