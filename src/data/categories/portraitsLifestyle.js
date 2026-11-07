@@ -52,9 +52,9 @@ export const portraitsLifestyleGallery = {
       title: 'Personal Portraits',
       tag: 'Personal Branding & Character',
       location: 'Johannesburg',
-      date: 'April 2026',
+      date: '2026',
       coverImage: '/images/potraits/PersonalPotraits/les.jpg',
-      description: 'Personal branding portrait series tailored for professional presence, speaking engagements, and modern identity.',
+      description: 'Personal branding and character portrait series tailored for professional presence, speaking engagements, and modern identity.',
       photos: [
         {
           id: 'les-1',
@@ -70,7 +70,28 @@ export const portraitsLifestyleGallery = {
           alt: 'Character portrait of Pablo with natural expression and quiet confidence',
           title: 'Pablo — Distinct Presence',
           caption: 'Personal Character Study'
-        }
+        },
+        {
+          id: 'lungi-1',
+          src: '/images/potraits/PersonalPotraits/Lungi1.jpg',
+          alt: 'Editorial portrait of Lungi with striking studio presence',
+          title: 'Lungi',
+          caption: ''
+        }//,
+        // {
+        //   id: 'lungi-2',
+        //   src: '/images/potraits/PersonalPotraits/lungi2.jpg',
+        //   alt: 'Close-up character portrait study of Lungi',
+        //   title: 'Lungi',
+        //   caption: 'Natural Light Study'
+        // },
+        // {
+        //   id: 'lungi-3',
+        //   src: '/images/potraits/PersonalPotraits/lungi BW.jpg',
+        //   alt: 'Monochrome black and white portrait of Lungi',
+        //   title: 'Lungi — Timeless Monochrome',
+        //   caption: 'Black & White Editorial'
+        // }
       ]
     }
   ]
