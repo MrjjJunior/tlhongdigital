@@ -5,6 +5,7 @@
   import About from './lib/About.svelte';
   import Services from './lib/Services.svelte';
   import Portfolio from './lib/Portfolio.svelte';
+  import Pricing from './lib/Pricing.svelte';
   import Approach from './lib/Approach.svelte';
   import Contact from './lib/Contact.svelte';
   import Footer from './lib/Footer.svelte';
@@ -123,6 +124,7 @@
     <About />
     <Services />
     <Portfolio onSelectCategory={navigateToGallery} />
+    <Pricing />
     <Approach />
     <Contact />
   {/if}

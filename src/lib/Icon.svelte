@@ -30,5 +30,7 @@
     <path d="M4 7h16M4 12h16M4 17h16" />
   {:else if name === 'close'}
     <path d="m6 6 12 12M18 6 6 18" />
+  {:else if name === 'check'}
+    <polyline points="20 6 9 17 4 12" />
   {/if}
 </svg>

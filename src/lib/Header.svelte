@@ -27,6 +27,7 @@
     <a href="#about" onclick={closeMenu}>About</a>
     <a href="#services" onclick={closeMenu}>Services</a>
     <a href="#portfolio" onclick={closeMenu}>Portfolio</a>
+    <a href="#pricing" onclick={closeMenu}>Pricing</a>
     <a href="#approach" onclick={closeMenu}>Approach</a>
     <a class="nav-cta" href="#contact" onclick={closeMenu}>
       Book a shoot <Icon name="arrow" />
