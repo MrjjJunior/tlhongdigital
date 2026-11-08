@@ -41,43 +41,43 @@ export const corporateEventsGallery = {
           id: 'sasol-2',
           src: '/images/corporateAndEvents/SosalBrigdeToWork/PSX_20260627_161039.jpg',
           alt: 'Delegates in conversation during pre-event reception',
-          title: 'Delegate Networking & Conversations',
-          caption: 'Executive Cocktail Lounge'
+          title: ' ',
+          caption: ' '
         },
         {
           id: 'sasol-3',
           src: '/images/corporateAndEvents/SosalBrigdeToWork/PSX_20260626_172959.jpg',
           alt: 'Programme presentation and participant engagement',
-          title: 'Session Focus & Engagement',
-          caption: 'Plenary Workshop'
+          title: ' ',
+          caption: ' '
         },
         {
           id: 'sasol-4',
           src: '/images/corporateAndEvents/SosalBrigdeToWork/leraiSeated.jpg',
           alt: 'Portrait of participant seated during event proceedings',
-          title: 'Participant Poise',
-          caption: 'Auditorium Proceedings'
+          title: 'Panel discussion',
+          caption: 'Participents of brigde to work'
         },
         {
           id: 'sasol-5',
           src: '/images/corporateAndEvents/SosalBrigdeToWork/amahlewtcsign.jpg',
           alt: 'Participant posing by the milestone sign',
-          title: 'Milestone Signature',
-          caption: 'Programme Signage & Wall'
+          title: 'WeThinkCode Stall',
+          caption: 'Opening opportinuties to the youth'
         },
-        {
-          id: 'sasol-6',
-          src: '/images/corporateAndEvents/SosalBrigdeToWork/hero.webp',
-          alt: 'Key moment captured during the event',
-          title: 'Defining Moments',
-          caption: 'Programme Milestones'
-        },
+        // {
+        //   id: 'sasol-6',
+        //   src: '/images/corporateAndEvents/SosalBrigdeToWork/hero.webp',
+        //   alt: 'Key moment captured during the event',
+        //   title: 'Defining Moments',
+        //   caption: 'Programme Milestones'
+        // },
         {
           id: 'sasol-7',
           src: '/images/corporateAndEvents/SosalBrigdeToWork/hero.jpg',
           alt: 'Evening gala celebration moment',
-          title: 'Programme Celebration',
-          caption: 'Celebration & Fellowship'
+          title: ' ',
+          caption: ' '
         }
       ]
     },
@@ -159,8 +159,8 @@ export const corporateEventsGallery = {
           id: '5fm-3',
           src: '/images/corporateAndEvents/5fm/PSX_20260613_092946.jpg',
           alt: 'Sound engineering and producer deck at the event',
-          title: 'The Production Deck',
-          caption: 'Audio Control & Broadcast Console'
+          title: ' ',
+          caption: ' '
         }
       ]
     },
