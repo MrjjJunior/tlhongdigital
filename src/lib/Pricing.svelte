@@ -7,10 +7,10 @@
       title: 'Photography',
       tag: 'Stills & Portraiture',
       icon: 'camera',
-      price: 'R1,200',
+      price: 'From R1,200',
       priceNote: 'Call-out fee · First hour included',
       features: [
-        'R1,200 call-out fee.',
+        'From R1,200 call-out fee.',
         'First hour included.',
         'Professional photo editing included.',
         'High-resolution digital delivery.',
