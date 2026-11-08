@@ -69,7 +69,7 @@
       </h2>
     </div>
     <p>
-      Clear, straightforward rates for photography, bespoke quotations for video production, and tailored combined packages to document your vision.
+      Clear, straightforward rates for photography, quotations for video production, and tailored combined packages to document your vision.
     </p>
   </div>
 
