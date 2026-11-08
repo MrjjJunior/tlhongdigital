@@ -49,21 +49,61 @@
     }
 
     // Otherwise we are on the home view
+    const targetId = rawHash.replace(/^#\/?/, '');
+    if (rawHash && rawHash !== '#') {
+      showSection(targetId === 'home' ? '' : targetId);
+    } else if (currentView === 'gallery') {
+      // Back button returning from a gallery: let the browser restore the
+      // previous scroll position.
+      currentView = 'home';
+      currentEventSlug = null;
+    }
+  }
+
+  const SECTION_IDS = ['home', 'about', 'services', 'portfolio', 'pricing', 'approach', 'contact'];
+
+  // Section links (#about, #contact, ...) are handled in-page so the address
+  // bar stays clean instead of showing /#about. Gallery routes (#/gallery/...)
+  // keep their shareable hash URLs.
+  function cleanHashFromUrl() {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
+
+  function scrollToSection(targetId, wasGallery) {
+    tick().then(() => {
+      if (!targetId) {
+        window.scrollTo({ top: 0, behavior: wasGallery ? 'instant' : 'smooth' });
+        return;
+      }
+      const el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: wasGallery ? 'instant' : 'smooth' });
+      }
+    });
+  }
+
+  function showSection(targetId) {
     const wasGallery = currentView === 'gallery';
     currentView = 'home';
     currentEventSlug = null;
+    scrollToSection(targetId, wasGallery);
+    cleanHashFromUrl();
+  }
 
-    if (rawHash && rawHash !== '#' && rawHash !== '#home') {
-      const targetId = rawHash.replace(/^#\/?/, '');
-      tick().then(() => {
-        const el = document.getElementById(targetId);
-        if (el) {
-          el.scrollIntoView({ behavior: wasGallery ? 'instant' : 'smooth' });
-        }
-      });
-    } else if (rawHash === '#home') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Clicks on section anchors scroll in-page without adding a hash to the URL.
+  function handleAnchorClick(event) {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+      return;
     }
+
+    const link = event.target instanceof Element ? event.target.closest('a[href^="#"]') : null;
+    if (!link) return;
+
+    const targetId = link.getAttribute('href').slice(1);
+    if (!targetId || targetId.startsWith('/') || !SECTION_IDS.includes(targetId)) return;
+
+    event.preventDefault();
+    showSection(targetId === 'home' ? '' : targetId);
   }
 
   function navigateToGallery(slugOrCategory) {
@@ -78,8 +118,10 @@
   onMount(() => {
     parseHash();
     window.addEventListener('hashchange', parseHash);
+    window.addEventListener('click', handleAnchorClick);
     return () => {
       window.removeEventListener('hashchange', parseHash);
+      window.removeEventListener('click', handleAnchorClick);
     };
   });
 </script>
