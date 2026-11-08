@@ -117,19 +117,7 @@ h1 em, h2 em {
 .section-label {
   color: var(--green);
   align-self: flex-start;
-  align-items: center;
-  gap: 12px;
   display: flex;
-}
-
-.section-label span {
-  border: 1px solid;
-  border-radius: 50%;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  font-size: 9px;
-  display: grid;
 }
 
 .section-label p {

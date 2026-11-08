@@ -64,7 +64,6 @@
 <section class="pricing section" id="pricing">
   <div class="pricing-heading">
     <div class="section-label">
-      <span>04</span>
       <p>Pricing</p>
     </div>
     <div>

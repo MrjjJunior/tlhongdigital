@@ -10,7 +10,6 @@
 <section class="approach section" id="approach">
   <div class="approach-intro">
     <div class="section-label light">
-      <span>05</span>
       <p>Our approach</p>
     </div>
     <p class="eyebrow light">How we work</p>

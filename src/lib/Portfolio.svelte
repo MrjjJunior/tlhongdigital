@@ -16,7 +16,6 @@
 <section class="portfolio section" id="portfolio">
   <div class="portfolio-heading">
     <div class="section-label">
-      <span>03</span>
       <p>Our portfolio</p>
     </div>
     <div>

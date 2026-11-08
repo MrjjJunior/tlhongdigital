@@ -59,7 +59,6 @@
 <section class="services section-dark" id="services">
   <div class="section-heading">
     <div class="section-label light">
-      <span>02</span>
       <p>Our services</p>
     </div>
     <div>

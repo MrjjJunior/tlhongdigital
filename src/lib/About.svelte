@@ -1,6 +1,5 @@
 <section class="about section" id="about">
   <div class="section-label">
-    <span>01</span>
     <p>About us</p>
   </div>
 
