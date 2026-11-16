@@ -33,7 +33,7 @@ export const sportsGallery = {
           id: 'sport-1',
           src: '/images/sports/SigmaCup/ujBoys.jpg',
           alt: 'UJ Rugby 10s squad lineup photo',
-          title: 'UJ Squad Lineup',
+          title: ' ',
           caption: 'The UJ Sigma Cup 10s Team',
           featured: true
         },
@@ -41,28 +41,28 @@ export const sportsGallery = {
           id: 'sport-2',
           src: '/images/sports/SigmaCup/tunnel.jpg',
           alt: 'Athletes in action during intense competition',
-          title: 'Walk In',
+          title: ' ',
           caption: 'The start of every game'
         },
         {
           id: 'sport-3',
           src: '/images/sports/SigmaCup/PSX_20261004_063347.jpg',
           alt: 'Court-side play and tactical adjustment',
-          title: 'Intense Ruck',
+          title: ' ',
           caption: 'Players giving their all'
         },
         {
           id: 'sport-4',
           src: '/images/sports/SigmaCup/PSX_20261004_064145.jpg',
           alt: 'Celebration and victory reaction from team bench',
-          title: 'Victory Emotion',
+          title: ' ',
           caption: 'Diving celebration'
         },
         {
           id: 'sport-5',
           src: '/images/sports/SigmaCup/tumokick.jpg',
           alt: 'Dynamic sports athlete driving with intense focus',
-          title: 'Pure Focus',
+          title: ' ',
           caption: 'To lead the team to victory'
         }
       ]

@@ -32,7 +32,7 @@ export const portraitsLifestyleGallery = {
           id: 'gcc-1',
           src: '/images/potraits/GautengCityCollegePeagent/sba.jpg',
           alt: 'Portrait of contestant at the Gauteng City College Pageant',
-          title: 'Elegance in Frame',
+          title: ' ',
           caption: 'Pageant Contestant Portrait',
           featured: true
         },
@@ -40,7 +40,7 @@ export const portraitsLifestyleGallery = {
           id: 'gcc-2',
           src: '/images/potraits/GautengCityCollegePeagent/small.jpg',
           alt: 'Portrait capture of pageant participant with gentle depth of field',
-          title: 'Poise & Confidence',
+          title: ' ',
           caption: 'Studio & Stage Expression'
         }
       ]
@@ -60,23 +60,23 @@ export const portraitsLifestyleGallery = {
           id: 'les-1',
           src: '/images/potraits/PersonalPotraits/les.jpg',
           alt: 'Contemporary portrait of Les with warm earthy backdrop',
-          title: 'Les — Modern Identity',
-          caption: 'Personal Branding Session',
+          title: ' ',
+          caption: 'Les',
           featured: true
         },
         {
           id: 'pablo-1',
           src: '/images/potraits/PersonalPotraits/pablo.jpg',
           alt: 'Character portrait of Pablo with natural expression and quiet confidence',
-          title: 'Pablo — Distinct Presence',
-          caption: 'Personal Character Study'
+          title: ' ',
+          caption: 'pablo'
         },
         {
           id: 'lungi-1',
           src: '/images/potraits/PersonalPotraits/Lungi1.jpg',
           alt: 'Editorial portrait of Lungi with striking studio presence',
-          title: 'Lungi',
-          caption: ''
+          title: ' ',
+          caption: 'Lungi'
         }//,
         // {
         //   id: 'lungi-2',

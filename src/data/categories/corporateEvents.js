@@ -33,8 +33,8 @@ export const corporateEventsGallery = {
           id: 'sasol-1',
           src: '/images/corporateAndEvents/SosalBrigdeToWork/sasolgroup.jpg',
           alt: 'Sasol Bridge to Work group photo with attendees and leadership',
-          title: 'Programme Group Portrait',
-          caption: 'Main Foyer · Sasol Bridge to Work 2026',
+          title: ' ',
+          caption: ' ',
           featured: true
         },
         {
@@ -55,15 +55,15 @@ export const corporateEventsGallery = {
           id: 'sasol-4',
           src: '/images/corporateAndEvents/SosalBrigdeToWork/leraiSeated.jpg',
           alt: 'Portrait of participant seated during event proceedings',
-          title: 'Panel discussion',
-          caption: 'Participents of brigde to work'
+          title: ' ',
+          caption: ' '
         },
         {
           id: 'sasol-5',
           src: '/images/corporateAndEvents/SosalBrigdeToWork/amahlewtcsign.jpg',
           alt: 'Participant posing by the milestone sign',
-          title: 'WeThinkCode Stall',
-          caption: 'Opening opportinuties to the youth'
+          title: ' ',
+          caption: ' '
         },
         // {
         //   id: 'sasol-6',
@@ -96,37 +96,37 @@ export const corporateEventsGallery = {
           id: 'wtc-1',
           src: '/images/corporateAndEvents/WeThinkCode/wtcgroup.jpg',
           alt: 'WeThinkCode cohort group photograph',
-          title: 'Cohort & Delegation Group',
-          caption: 'WeThinkCode_ Campus Plenary',
+          title: ' ',
+          caption: ' ',
           featured: true
         },
         {
           id: 'wtc-2',
           src: '/images/corporateAndEvents/WeThinkCode/stockwtc.jpg',
           alt: 'Stage presentation and keynotes at tech innovation event',
-          title: 'Innovation & Tech Plenary',
-          caption: 'Campus Innovation Stage'
+          title: ' ',
+          caption: ' '
         },
         {
           id: 'wtc-3',
           src: '/images/corporateAndEvents/WeThinkCode/PSX_20260407_164320.jpg',
           alt: 'Students engaged in interactive coding workshop',
-          title: 'Collaborative Problem Solving',
-          caption: 'Peer-to-Peer Coding Hub'
+          title: ' ',
+          caption: ' '
         },
         {
           id: 'wtc-4',
           src: '/images/corporateAndEvents/WeThinkCode/PSX_20260409_134750.jpg',
           alt: 'Candid campus moments between workshop sessions',
-          title: 'Campus Reflections',
-          caption: 'Courtyard Breakout'
+          title: ' ',
+          caption: ' '
         },
         {
           id: 'wtc-5',
           src: '/images/corporateAndEvents/WeThinkCode/PSX_20260702_233046.jpg',
           alt: 'Evening showcase and demo day celebration',
-          title: 'Demo Night Celebration',
-          caption: 'Showcase & Demo Evening'
+          title: ' ',
+          caption: ' '
         }
       ]
     },
@@ -144,16 +144,16 @@ export const corporateEventsGallery = {
           id: '5fm-1',
           src: '/images/corporateAndEvents/5fm/5fmlookback.jpg',
           alt: '5FM live broadcast studio setup with host looking back smiling',
-          title: 'Live On-Air Moment',
-          caption: 'Live Broadcast Booth',
+          title: ' ',
+          caption: ' ',
           featured: true
         },
         {
           id: '5fm-2',
           src: '/images/corporateAndEvents/5fm/PSX_20260613_085858.jpg',
           alt: 'Audience engagement during 5FM showcase event',
-          title: 'Audience Pulse',
-          caption: 'Live Activation Arena'
+          title: ' ',
+          caption: ' '
         },
         {
           id: '5fm-3',
@@ -178,23 +178,23 @@ export const corporateEventsGallery = {
           id: 'gauteng-ai-1',
           src: '/images/corporateAndEvents/GautengAICommunity/PSX_20260627_192700.jpg',
           alt: 'Evening atmosphere and venue setup for Gauteng AI Community meetup',
-          title: 'Summit Atmosphere & Setup',
-          caption: 'Main Auditorium Setup',
+          title: ' ',
+          caption: ' ',
           featured: true
         },
         {
           id: 'gauteng-ai-2',
           src: '/images/corporateAndEvents/GautengAICommunity/PSX_20260627_200503.jpg',
           alt: 'Keynote presentation and address on the main stage',
-          title: 'AI Keynote Address',
-          caption: 'Auditorium Main Stage'
+          title: ' ',
+          caption: ' '
         },
         {
           id: 'gauteng-ai-3',
           src: '/images/corporateAndEvents/GautengAICommunity/PSX_20260627_201355.jpg',
           alt: 'Speaker panel discussion and community recognition',
-          title: 'Panel & Recognition',
-          caption: 'Innovation Discussion Panel'
+          title: ' ',
+          caption: ' '
         }
       ]
     }

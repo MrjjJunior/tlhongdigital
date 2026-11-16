@@ -32,7 +32,7 @@ export const celebrationsGallery = {
           id: 'bonolo-sbu-1',
           src: '/images/celebrations/Bonolo&SbuCelebration/IMG_9211.jpg',
           alt: 'Bonolo and Sbu celebration moment',
-          title: 'A Beautiful Beginning',
+          title: ' ',
           caption: 'Milestone Celebration · Outdoor Portrait',
           featured: true
         },
@@ -40,21 +40,21 @@ export const celebrationsGallery = {
           id: 'bonolo-sbu-2',
           src: '/images/celebrations/Bonolo&SbuCelebration/IMG_9238.jpg',
           alt: 'Celebration warmth and shared laughter',
-          title: 'Joyful Connection',
+          title: ' ',
           caption: 'Celebration Portraits'
         },
         {
           id: 'bonolo-sbu-3',
           src: '/images/celebrations/Bonolo&SbuCelebration/IMG_9430.jpg',
           alt: 'Vibrant celebration moments with loved ones',
-          title: 'Shared Laughter',
+          title: ' ',
           caption: 'Celebration Highlights'
         },
         {
           id: 'bonolo-sbu-4',
           src: '/images/celebrations/Bonolo&SbuCelebration/IMG_9439.jpg',
           alt: 'Celebration elegance and memorable moments',
-          title: 'Unforgettable Moments',
+          title: ' ',
           caption: 'Golden Hour Celebration'
         }
       ]
@@ -74,7 +74,7 @@ export const celebrationsGallery = {
           id: 'fam-1',
           src: '/images/celebrations/TheFamily/fam.jpg',
           alt: 'Family gathering in joyful celebration outdoors',
-          title: 'Friends Gathering',
+          title: ' ',
           caption: 'Milestone Celebration Outdoors',
           featured: true
         },
@@ -82,7 +82,7 @@ export const celebrationsGallery = {
           id: 'fam-2',
           src: '/images/celebrations/TheFamily/IMG_0389.jpg',
           alt: 'Friends milestone moments and candid portraits',
-          title: 'Cherished Bonds',
+          title: ' ',
           caption: 'Friends Milestone Portrait'
         }
       ]
