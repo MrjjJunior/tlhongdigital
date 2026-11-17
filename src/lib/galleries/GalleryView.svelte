@@ -185,9 +185,6 @@
                       <span class="caption">{photo.caption}</span>
                     {/if}
                   </div>
-                  <span class="expand-btn" aria-hidden="true">
-                    <Icon name="arrow" />
-                  </span>
                 </figcaption>
               </figure>
             </button>
@@ -274,9 +271,6 @@
                 {/if}
                 <div class="event-view-action">
                   <span>View event photos</span>
-                  <span class="event-arrow-circle" aria-hidden="true">
-                    <Icon name="arrow" />
-                  </span>
                 </div>
               </div>
             </button>
@@ -643,31 +637,13 @@
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.85);
     margin-top: 10px;
+    transition: color 0.25s ease;
   }
 
-  .event-arrow-circle {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    display: grid;
-    place-items: center;
-    background: rgba(255, 255, 255, 0.08);
-    transition: all 0.25s ease;
-  }
-
-  .event-card:hover .event-arrow-circle {
-    background: var(--cream, #f5f2e9);
-    color: var(--forest, #123126);
-    border-color: var(--cream, #f5f2e9);
-    transform: translateX(3px);
-  }
-
-  .event-arrow-circle :global(svg) {
-    width: 14px;
-    height: 14px;
+  .event-card:hover .event-view-action {
+    color: var(--sage, #9ab195);
   }
 
   /* ============================================================== */
@@ -767,7 +743,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .card-text strong {
@@ -783,30 +759,6 @@
     font-size: 11px;
     color: rgba(245, 242, 233, 0.75);
     font-weight: 300;
-  }
-
-  .expand-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    display: grid;
-    place-items: center;
-    color: #fff;
-    flex-shrink: 0;
-    transition: all 0.25s ease;
-    background: rgba(255, 255, 255, 0.08);
-  }
-
-  .photo-card:hover .expand-btn {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: #fff;
-    transform: scale(1.08);
-  }
-
-  .expand-btn :global(svg) {
-    width: 16px;
-    height: 16px;
   }
 
   .empty-gallery {

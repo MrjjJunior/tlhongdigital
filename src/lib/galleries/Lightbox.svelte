@@ -12,6 +12,15 @@
 
   let activeItem = $derived(items[currentIndex] || null);
 
+  // Touch gesture state for mobile swiping
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchCurrentX = 0;
+  let touchCurrentY = 0;
+  let isTouching = false;
+  let touchDeltaX = $state(0);
+  let isSwiping = $state(false);
+
   function handleKeydown(event) {
     if (!isOpen) return;
     if (event.key === 'Escape') {
@@ -23,6 +32,56 @@
     }
   }
 
+  function handleTouchStart(e) {
+    if (e.touches.length !== 1) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    touchCurrentX = touchStartX;
+    touchCurrentY = touchStartY;
+    touchDeltaX = 0;
+    isTouching = true;
+    isSwiping = false;
+  }
+
+  function handleTouchMove(e) {
+    if (!isTouching || e.touches.length !== 1) return;
+    touchCurrentX = e.touches[0].clientX;
+    touchCurrentY = e.touches[0].clientY;
+    const diffX = touchCurrentX - touchStartX;
+    const diffY = touchCurrentY - touchStartY;
+
+    // Track horizontal swipe when horizontal movement is dominant
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+      touchDeltaX = diffX;
+      isSwiping = true;
+    }
+  }
+
+  function handleTouchEnd() {
+    if (!isTouching) return;
+    const diffX = touchCurrentX - touchStartX;
+    const diffY = touchCurrentY - touchStartY;
+    const threshold = 40;
+
+    if (items.length > 1 && Math.abs(diffX) > threshold && Math.abs(diffX) > Math.abs(diffY)) {
+      if (diffX < 0) {
+        onNext();
+      } else {
+        onPrev();
+      }
+    }
+
+    isTouching = false;
+    isSwiping = false;
+    touchDeltaX = 0;
+  }
+
+  function handleTouchCancel() {
+    isTouching = false;
+    isSwiping = false;
+    touchDeltaX = 0;
+  }
+
   $effect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -30,6 +89,9 @@
     } else {
       document.body.style.overflow = '';
       window.removeEventListener('keydown', handleKeydown);
+      isTouching = false;
+      isSwiping = false;
+      touchDeltaX = 0;
     }
 
     return () => {
@@ -47,11 +109,15 @@
     aria-label="Image preview"
     tabindex="-1"
     onclick={(e) => {
-      if (e.target === e.currentTarget) onClose();
+      if (e.target === e.currentTarget && !isSwiping && Math.abs(touchDeltaX) < 10) onClose();
     }}
     onkeydown={(e) => {
       if (e.key === 'Escape') onClose();
     }}
+    ontouchstart={handleTouchStart}
+    ontouchmove={handleTouchMove}
+    ontouchend={handleTouchEnd}
+    ontouchcancel={handleTouchCancel}
   >
     <button
       class="lightbox-btn lightbox-close"
@@ -87,11 +153,15 @@
     {/if}
 
     <div class="lightbox-stage">
-      <div class="lightbox-image-wrapper">
+      <div
+        class="lightbox-image-wrapper"
+        style={isSwiping ? `transform: translateX(${touchDeltaX * 0.65}px); transition: none;` : 'transition: transform 0.25s ease-out;'}
+      >
         <img
           src={activeItem.src}
           alt={activeItem.alt || activeItem.title || 'Portfolio photograph'}
           class="lightbox-image"
+          draggable="false"
         />
       </div>
 
@@ -106,6 +176,7 @@
           {/if}
         </div>
         <div class="lightbox-counter">
+          <span class="swipe-hint">Swipe to browse · </span>
           <span>{currentIndex + 1}</span> / <span>{items.length}</span>
         </div>
       </div>
@@ -125,6 +196,9 @@
     justify-content: center;
     padding: 30px;
     animation: fadeIn 0.25s ease-out;
+    touch-action: pan-y pinch-zoom;
+    user-select: none;
+    -webkit-user-select: none;
   }
 
   @keyframes fadeIn {
@@ -153,6 +227,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    will-change: transform;
   }
 
   .lightbox-image {
@@ -163,6 +238,7 @@
     object-fit: contain;
     border-radius: 4px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+    pointer-events: none;
   }
 
   .lightbox-footer {
@@ -212,6 +288,10 @@
     color: var(--sage, #9ab195);
     white-space: nowrap;
     padding-bottom: 4px;
+  }
+
+  .swipe-hint {
+    display: none;
   }
 
   .lightbox-btn {
@@ -285,16 +365,17 @@
       height: 40px;
     }
 
-    .lightbox-prev {
-      left: 10px;
-      width: 40px;
-      height: 40px;
+    .lightbox-prev,
+    .lightbox-next {
+      display: none;
     }
 
-    .lightbox-next {
-      right: 10px;
-      width: 40px;
-      height: 40px;
+    .swipe-hint {
+      display: inline;
+      font-size: 11px;
+      opacity: 0.8;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
 
     .lightbox-footer {
