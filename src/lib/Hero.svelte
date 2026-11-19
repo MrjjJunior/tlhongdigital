@@ -1,5 +1,6 @@
 <script>
   import Icon from './Icon.svelte';
+  import { openContactForm } from './contactState.svelte.js';
 </script>
 
 <section class="hero" id="home">
@@ -24,7 +25,7 @@
       <a class="button button-light" href="#portfolio">
         Explore our work <Icon name="arrow" />
       </a>
-      <a class="text-link light" href="#contact">
+      <a class="text-link light" href="#contact" onclick={openContactForm}>
         Book a shoot <Icon name="arrow" />
       </a>
     </div>

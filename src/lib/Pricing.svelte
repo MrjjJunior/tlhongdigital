@@ -1,11 +1,6 @@
 <script>
   import Icon from './Icon.svelte';
-
-  const CONTACT_EMAIL = 'tlhongdigital@gmail.com';
-
-  function mailtoHref(subject) {
-    return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}`;
-  }
+  import { selectContactService } from './contactState.svelte.js';
 
   const pricingCards = [
     {
@@ -117,8 +112,9 @@
         <div class="card-action">
           <a
             class="button button-light pricing-cta"
-            href={mailtoHref(card.title)}
-            aria-label="Enquire about {card.title} by email"
+            href="#contact"
+            onclick={() => selectContactService()}
+            aria-label="Enquire about {card.title}"
           >
             Enquire now <Icon name="arrow" />
           </a>

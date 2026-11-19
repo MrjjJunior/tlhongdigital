@@ -1,6 +1,7 @@
 <script>
   import Icon from '../Icon.svelte';
   import Lightbox from './Lightbox.svelte';
+  import { selectContactService } from '../contactState.svelte.js';
   import {
     getGalleryBySlug,
     getEventBySlug,
@@ -294,7 +295,10 @@
       <div class="cta-buttons">
         <a
           class="button button-light"
-          href="mailto:tlhongdigital@gmail.com?subject={encodeURIComponent('Shoot enquiry: ' + (currentEvent ? currentEvent.title : gallery.title))}"
+          href="#contact"
+          onclick={() => {
+            selectContactService();
+          }}
         >
           Inquire about this style <Icon name="arrow" />
         </a>

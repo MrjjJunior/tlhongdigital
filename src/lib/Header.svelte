@@ -1,5 +1,6 @@
 <script>
   import Icon from './Icon.svelte';
+  import { openContactForm } from './contactState.svelte.js';
 
   let { isGallery = false } = $props();
 
@@ -11,6 +12,11 @@
 
   function toggleMenu() {
     menuOpen = !menuOpen;
+  }
+
+  function handleBookShoot() {
+    closeMenu();
+    openContactForm();
   }
 </script>
 
@@ -29,7 +35,7 @@
     <a href="#portfolio" onclick={closeMenu}>Portfolio</a>
     <a href="#pricing" onclick={closeMenu}>Pricing</a>
     <a href="#approach" onclick={closeMenu}>Approach</a>
-    <a class="nav-cta" href="#contact" onclick={closeMenu}>
+    <a class="nav-cta" href="#contact" onclick={handleBookShoot}>
       Book a shoot <Icon name="arrow" />
     </a>
   </nav>

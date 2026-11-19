@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
+﻿@import "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
 
 :root {
   --forest: #123126;
@@ -757,12 +757,8 @@ h1 em, h2 em {
 
 /* Contact */
 .contact {
-  min-height: 700px;
-  color: var(--cream);
-  text-align: center;
-  place-items: center;
-  display: grid;
   position: relative;
+  color: var(--cream);
 }
 
 .contact-image {
@@ -777,27 +773,7 @@ h1 em, h2 em {
   inset: 0;
 }
 
-.contact-content {
-  z-index: 2;
-  flex-direction: column;
-  align-items: center;
-  max-width: 990px;
-  padding: 90px 5vw;
-  display: flex;
-  position: relative;
-}
 
-.contact-content h2 {
-  font-size: clamp(50px, 6vw, 84px);
-}
-
-.contact-content p:not(.eyebrow) {
-  color: rgba(245, 242, 233, 0.7);
-  max-width: 610px;
-  margin: 30px 0 35px;
-  font-size: 15px;
-  line-height: 1.8;
-}
 
 /* Footer */
 footer {
@@ -1041,9 +1017,6 @@ footer {
   .approach-list p {
     grid-column: 2;
     margin-top: 10px;
-  }
-  .contact {
-    min-height: 650px;
   }
   .footer-top {
     grid-template-columns: 1fr;
